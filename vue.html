@@ -1,0 +1,97 @@
+#app
+  h1(v-if='check > 10') {{ title }}
+  h1(v-show='check > 10') {{ title }}
+  #form
+    form(action='/formprocess.php' method='post')
+      .name-card-area(v-for='(item, index) in nameCards' v-if='item.name != "Frank Ho"')
+        .block.firstname
+          | {{ firstNameTitle }}: 
+          input(type='text' name='firstname' v-model='item.name')
+        .block.lastname
+          | {{ lastNameTitle }}:
+          input(type='text' name='lastname')  
+        .block.
+          | {{ item.name }}
+        .block.sex
+          | {{ sexTitle }}:
+          input(type='radio' name='sex')
+          |  {{ item.sex }}
+        .block.location
+          | {{ bornTitle }}:
+          | {{ item.born }}
+          select(name='location' v-model='item.born')
+            option(v-bind:value='option' v-for='(option, index) in location') {{ option }}
+        .tmp
+          | {{ location[1] }}
+            
+
+          .form {
+            border: solid 1px black;
+            padding: 10px;
+          }
+          
+          .top-border {
+            border-top: solid 1px grey;
+          }
+          
+          
+          .name-card-area {
+            border: solid 1px blue;
+          }
+          .padding-left-20 {
+             padding-left: 20px;
+          }
+
+
+          // int n[5] = { 1, 2, 3, 4, 5, "abc", 10.4, 'a', };
+
+// int n[15] = { 1, 2, 3, 4, 5 }
+
+
+
+
+
+<script src=""></script>
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    check: 10,
+    show: false,
+    hightline: true,
+    title: '表單超級練習',
+    firstNameTitle: '名字',
+    lastNameTitle: '姓氏',
+    sexTitle: '性別',
+    bornTitle: '出生地',
+    nameCards: [
+      {
+        name: 'Warrick Tsai',
+        sex: '中性',
+        born: '台北市',
+      },
+      {
+        name: 'Frank Ho',
+        sex: '女',
+        born: '新竹市',
+      },
+      {
+        name: 'May Li',
+        sex: '男',
+        born: '台中市',
+      },
+      {
+        name: 'May Lu',
+        sex: '男',
+        born: '台中市',
+      },
+    ],
+    
+    location: [
+      '新竹市',
+      '台北市',
+      '台中市',
+      '宜蘭市',
+    ]
+  }
+})

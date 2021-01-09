@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      margin: 0;
+    }
+
+    .header, .section, .footer, .sitebar {
+      position: relative;
+      float: left;
+    }
+
+    .header {
+      height: 15vh;
+      width: 80vw;
+      background-color: lightsteelblue;
+    }
+    .section {
+      width: 80vw;
+      height: 70vh;
+      background-color: lightcoral;
+      overflow: hidden;
+    }
+    .footer {
+      height: 15vh;
+      width: 80vw;
+      background-color: lightseagreen;
+    }
+
+    .sitebar {
+      height: 100vh;
+      width: 20vw;
+      background-color: mistyrose;
+    }
+
+    .namecard {
+      background-color: #7db8ec;
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 400px;
+      left: 200px;
+      z-index: 999999;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+      padding: 20px;
+      color: #FFF;
+      font-size: 18px;
+      overflow: hidden;
+    }
+
+    .namecard2 {
+      background-color:palegreen;
+      width: 500px;
+      height: 250px;
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      z-index: 99999;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .namecard h5 {
+      font-size: 28px;
+    }
+
+    .namecard h5:hover {
+      font-size: 36px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <section></section>
+  <footer></footer>
+  
+  <div class="sitebar">
+    Sitebar
+  </div>
+  <div class="header">
+    <h1>我的名片</h1>
+  </div>
+  <div class="section">
+    <div class="namecard">
+      名片測試
+      <h5>王大明</h5>
+      <span>沃手工作</span>
+      <p>我是測試</p>
+    </div>
+    <div class="namecard2">
+      <h2>蔡奇宏</h2>
+      <span>(Chi-Hung Tsai)</span>
+      <h5>沃手工作-工程師</h5>
+      <p>沃手・握手，多才的雙方握手合作
+        聚首的藝術創作工作者，從不同領域出走，玩轉框限，進而以握手共濟的形式群聚「沃手工作」。</p>
+    </div>
+  </div>
+  <div class="footer">
+    copyright 2020 Warrick Tsai
+  </div>
+
+
+</body>
+
+</html>

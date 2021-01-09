@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" tyoe="text/css" href="style.css">
+    <link rel="stylesheet" tyoe="text/css" href="rwd.css">
+    <title>Form</title>
+</head>
+<style>
+    .firstname{
+        /*border: solid 1px black;*/
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1{
+        font-size: 22px;
+    }
+ 
+    #form{
+        border: solid 1px black;
+        width: 320px;
+    }
+    .block{
+        width: 300px;
+        /*border: solid 1px black;*/
+        padding: 5px;
+    }
+    .submit{
+        text-align: right;
+        right: 10px;
+        margin: 5px;
+    }
+</style>
+<body>
+    <h1>表單練習</h1>
+    <div id="form">
+    <form action="formprocess.php" method="post">
+        <div class="block firstname">
+            First name:
+            <input type="text" name="firstname">
+        </div>
+        <div class="block lastname">
+            Last name:
+            <input type="text" name="lastname">
+        </div>
+        <div class="block sex">
+            Sex:                    
+            <input type="radio" name="sex"> 男
+            <input type="radio" name="sex"> 女
+            <input type="radio" name="sex"> 中性
+        </div>
+        <div class="block location">
+            出生地
+            <select name="location" >
+                <option value="1">南投縣</option>
+                <option value="2" selected>南投市</option>
+                <option value="3">水里鄉</option>
+            </select>
+        </div>
+        <div class ="message">
+            <textarea name="message" id="" cols="20" rows="3"></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" vlaue="送出">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 800px;
+            border-top: solid 20px #00b36b;
+            border-bottom: solid 20px #00b36b;
+            overflow:hidden;
+        }
+
+        .block {
+            border: solid 1px black;        
+        }
+        .static{
+            position: static;/*少用！*/
+            width: 100px;
+            height: 50px;
+        }
+        .relative{
+            position: relative;
+            width: 100px;
+            height: 50px;
+            top: 10px;/*和前一個元素的間距*/
+        }
+        .absolute{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+        }
+        .fixed{
+            position: fixed;
+            width: 100px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class='block static'>Static</div>
+    <div class='block relative'>relative</div>
+    <div class='block absolute'>absolute</div>
+    <div class='block fixed'>fixed</div>
+</body>
+</html>
+
+/*letter-spacing:2px（字體間距）
+font-weight:300px（預設）（字體粗度）*/

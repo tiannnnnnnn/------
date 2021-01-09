@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+            
+        h1{
+            color: #4F4F70 ;
+            position: absolute;
+            left: 550px;
+            top: 350px;
+            font-size: 28px;
+            z-index: 20000;
+            transition: 0.5s;
+        }
+        h1:hover {
+            font-size: 30px;
+        }
+        h2{
+            color: #4F4F70 ;
+            position: absolute;
+            font-size: 18px;
+            left: 550px;
+            top: 400px;
+            z-index: 20000;
+            transition: 0.5s;
+        }
+        h2:hover{
+            font-size: 20px;
+        }
+        h3{
+            color: #4F4F70 ;
+            position: absolute;
+            font-size: 18px;
+            left: 567px;
+            top: 418px;
+            z-index: 20000;
+            transition: 0.5s;
+        }
+        h3:hover{
+            font-size: 20px;
+        }
+        h4{
+            color: #4F4F70 ;
+            position: absolute;
+            font-size: 18px;
+            left: 568px;
+            top: 433px;
+            z-index: 20000;
+            transition: 0.5s;
+        }
+        h4:hover{
+            font-size: 20px;
+        }
+        .background2{
+            border-color:  #b4d5ff transparent transparent #a5d1ff;            border-style: solid solid solid solid;
+            border-width: 1200px 2050px 0px 0px;
+            height: 0px;
+            width: 0px;            position: absolute;
+            top: -215px;
+            left: -250px;
+            z-index: 2;
+        }
+        .background{
+            height: 937px;
+            width: 1500px;
+            position: absolute;
+            top: -100px;
+            left: -60px;
+            background-color: rgb(255, 212, 232);
+            z-index: 1;
+        }
+       
+        .namecard{
+            height: 289px;
+            width: 500px;
+            background-color: #c4dcff ;
+            position: absolute;
+            border-radius: 20px;
+            top: 270px;
+            left: 475px;
+            box-shadow:0px 0px 15px rgba(25, 24, 66, 0.616);
+            z-index: 3;
+        }
+        
+        .border{
+            height: 250px;
+            width: 470px;
+            position: absolute;
+            top: 288px;
+            left: 488px;
+            border-radius: 20px;
+            border-color: rgb(37, 42, 75);
+            border-style: inset;
+            z-index: 5;
+        }
+        
+        .triangle{            
+        border-color:  #ffd6e4 transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: 290px 500px 0px 0px;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        top: 270px;
+        left: 475px;
+        border-radius: 20px;
+        z-index: 4;
+        }
+        .circle{
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 280px;
+            left: 485px;
+            border-radius: 100px;
+            background-color: rgb(89, 85, 145);
+            box-shadow:0px 0px 5px rgb(255, 255, 255);
+            z-index: 6;
+        }
+        .circle2{
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0px;
+            left: 455px;
+            border-radius: 100px;
+            background-color: rgb(89, 85, 145);
+            box-shadow:0px 0px 5px rgb(255, 255, 255);
+            z-index: 6;
+        }
+        .circle3{
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 246px;
+            left: 0px;
+            border-radius: 100px;
+            background-color: rgb(89, 85, 145);
+            box-shadow:0px 0px 5px rgb(255, 255, 255);
+        }
+        .circle4{
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 0px;
+            left: -454px;
+            border-radius: 100px;
+            background-color: rgb(89, 85, 145);
+            box-shadow:0px 0px 5px rgb(255, 255, 255);
+        }
+
+        .oval{
+            height: 20px;
+            width: 170px;
+            position: absolute;
+            top: 506px;
+            left: 773px;
+            background-color: rgb(255, 204, 240);
+            border-radius: 20px;
+            z-index: 6;
+        }
+        .oval2{
+            height: 155px;
+            width: 20px;
+            position: absolute;
+            top: -140px;
+            left: 152px;
+            background-color: rgb(255, 205, 233);
+            border-radius: 20px;
+        }
+        .oval3{
+            height: 20px;
+            width: 170px;
+            position: absolute;
+            top: 305px;
+            left: 507px;
+            background-color: rgb(173, 201, 255);
+            border-radius: 20px;
+            z-index: 6;
+        }
+        .oval4{
+            height: 170px;
+            width: 20px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(162, 199, 255);
+            border-radius: 20px;
+            
+        }
+        .circlee{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: -30px;
+            left: 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            
+        }
+        .circlee2{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 140px;
+            left: -183px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            
+        }
+        .circlee3{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 0px;
+            left: 180px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            
+        }
+        .circlee4{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            top: 179px;
+            left: 0px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            
+        }
+        .bigcircle{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 130px;
+            left: 100px;
+            background-color: rgb(255, 208, 226);
+            border-radius: 100px;
+            z-index: 99999999999;
+            transition: 0.5s;
+        }
+        .bigcircle:hover{
+            height: 230px;
+            width: 230px;
+            border-radius:250px ;
+        }
+ 
+        .bigcircle2{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 80px;
+            left: 300px;
+            background-color: rgb(255, 208, 226);
+            border-radius: 100px;
+            z-index: 99999999999;
+            transition: 0.5s;
+        }       
+        .bigcircle2:hover{
+            height: 130px;
+            width: 130px;
+            border-radius:250px ;
+        }
+        .bigcircle3{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 500px;
+            left: 1100px;
+            background-color: rgb(179, 209, 255);
+            border-radius: 100px;
+            z-index: 99999999999;
+            transition: 0.5s;
+        }
+        .bigcircle3:hover{
+            height: 230px;
+            width: 230px;
+            border-radius:250px ;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>&nbsp;&nbsp; 許心恬</h1>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;--------------南投人</h2>
+        <h3>-----------------------台灣人</h3>
+        <h4>--------------------------------地球人</h4>
+    </div>
+
+    <div class=background>
+    </div>
+    <div class=background2>
+    </div>
+    <div class='namecard'>
+    </div>
+
+    <div class='border'>
+    </div>
+
+    <div class=circle>
+        <div class=circle2>
+            <div class=circle3>
+                <div class=circle4>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=oval>
+        <div class=oval2>
+            <div class=circlee></div>
+            <div class=circlee2></div>
+        </div>
+    </div>
+
+    <div class=bigcircle>
+    </div>
+    <div class=bigcircle2>
+    </div>
+    <div class=bigcircle3>
+    </div>
+
+    <div class=oval3>
+        <div class=oval4>
+            <div class=circlee3></div>
+            <div class=circlee4></div>
+        </div>
+    </div>
+    <div class=triangle></div>
+</body>
+</html>
